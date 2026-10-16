@@ -11,6 +11,3 @@ X,y = make_blobs(n_samples=100,cluster_std=cluster_std,centers=centroids,n_featu
 km = Kmeans(n_clusters=2,max_iters=100)
 km.fit_predict(X)
 
-
-plt.scatter(X[:,0],X[:,1]) #Plotting the data points
-plt.show()
