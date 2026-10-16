@@ -1,5 +1,6 @@
 from sklearn.datasets import make_blobs #Generates artificial datasets containing groups of points called clusters
 import matplotlib.pyplot as plt
+import numpy as np
 from kmeans import Kmeans #Importing the Kmeans class
 
 centroids = [(-5,-5),(7,7)] #Center of the clusters

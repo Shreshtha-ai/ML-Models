@@ -1,4 +1,5 @@
 import random
+import numpy as np
 
 class Kmeans:
     def __init__(self,n_clusters=2,max_iters=100):
@@ -17,11 +18,15 @@ class Kmeans:
 
     def assign_clusters(self,X):
         cluster_group = []
-        distances = []
+       
 
         for row in X:
+            distances = []
             for centroid in self.centroids:
-                
+               distances.append(np.sqrt(np.dot(row-centroid,row-centroid)))
+               print(distances) 
+               
+            
         return cluster_group
 
 
